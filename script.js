@@ -4,7 +4,7 @@
       $('#items').select2({
           placeholder: 'Cari Barang',
           ajax: {
-            url: "{{ route('barang.item') }}",
+            url: "{{ route('items.get-items') }}",
             dataType: 'json',
             delay: 250,
             processResults: function (data) {
